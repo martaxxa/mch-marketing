@@ -1,0 +1,32 @@
+.header {
+  background-color: #801b71;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__logo {
+    width: 40%;
+    padding: 1rem;
+  }
+
+  &__box2 {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex; 
+    gap: 1rem; 
+    list-style: none;
+    margin-right: 1rem;
+    padding: 0;
+    font-family: $fontfamily-main;
+    font-size: 0.9rem;
+
+    li {
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
