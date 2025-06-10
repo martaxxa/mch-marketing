@@ -1,0 +1,79 @@
+.cover {
+  background-image: url("../../images/escritorio-con-libreta-y-camara-de-fotos.jpg");
+  background-size: cover;
+  background-position: 70%;
+  background-repeat: no-repeat;
+  min-height: 100svh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding-left: 2rem;
+}
+
+.principal {
+  padding-top: 12rem;
+
+  &__title {
+    font-family: $fontfamily-title;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+
+  &__subtitle {
+    font-family: $fontfamily-main;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: $primary-color;
+  }
+
+  &__subtitle2 {
+    font-family: $fontfamily-main;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    margin-right: 5rem;
+  }
+}
+
+.link {
+  margin-top: 1rem;
+
+  &__btn {
+    position: relative; // ← ¡Esto es esencial!
+    font-family: $fontfamily-main;
+    color: $primary-color;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.7rem;
+    background-color: transparent;
+    border: solid 2px $primary-color;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+
+    &::after {
+      content: '   > ';
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: inherit; // hereda color del texto
+    }
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+      padding-right: 2rem;
+      //transform: scale(1.05);
+      //box-shadow: 0 0.5px 20px #565656;
+
+      &::after {
+        opacity: 1;
+        right: 0.7rem;
+      }
+    }
+  }
+}
