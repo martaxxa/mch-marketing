@@ -41,9 +41,12 @@
 
 .link {
   margin-top: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 
   &__btn {
-    position: relative; // ← ¡Esto es esencial!
+    position: relative;
     font-family: $fontfamily-main;
     color: $primary-color;
     font-size: 1.2rem;
@@ -56,24 +59,23 @@
     display: inline-block;
     cursor: pointer;
 
-    &::after {
-      content: '   > ';
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      color: inherit; // hereda color del texto
+    i {
+      color: $primary-color;
+      transition: color 0.3s ease;
+      padding-left: 0.3rem;
     }
 
     &:hover {
       background-color: $primary-color;
       color: white;
+      box-shadow: 0 0.5px 20px #565656;
       padding-right: 2rem;
-      //transform: scale(1.05);
-      //box-shadow: 0 0.5px 20px #565656;
 
-      &::after {
-        opacity: 1;
-        right: 0.7rem;
+      i {
+        color: white;
+        transform: translateX(6px);
       }
     }
   }
 }
+
