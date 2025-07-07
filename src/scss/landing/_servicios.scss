@@ -1,0 +1,115 @@
+.servicios-resumen {
+  padding: 4rem 2rem;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.servicios-resumen .contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.servicios-resumen h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: $fontfamily-title;
+  color: black;
+}
+
+.servicios-resumen .intro {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: $orange-color;
+  font-family: $fontfamily-main;
+}
+
+.servicios-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .servicios-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.bloque-servicio {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border: solid 1px $yellow-color;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  text-align: left;
+}
+
+.bloque-servicio h3 {
+  font-size: 1.3rem;
+  font-family: $fontfamily-main;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.bloque-servicio ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bloque-servicio li {
+  margin-bottom: 0.5rem;
+  font-family: $fontfamily-main;
+  font-size: 1.1rem;
+  color: #666;
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.bloque-servicio li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: $yellow-color;
+}
+
+.btn-servicios {
+  display: inline-block;
+  font-family: $fontfamily-main;
+  font-weight: 900;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: $yellow-color;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  i {
+    color: white;
+    transition: color 0.3s ease;
+    padding-left: 0.3rem;
+  }
+
+  &:hover {
+      background-color: $orange-color;
+      color: white;
+      box-shadow: 0 0.5px 20px #565656;
+      padding-right: 2rem;
+
+      i {
+        color: white;
+        transform: translateX(6px);
+      }
+    }
+}
+
+.btn-servicios:hover {
+  background-color: $orange-color;
+}
