@@ -13,3 +13,18 @@ window.addEventListener("scroll", () => {
     header.classList.remove("header--scrolled");
   }
 });
+
+//Form footers
+document.addEventListener("DOMContentLoaded", () => {
+  const contactBtn = document.querySelector(".contact-btn");
+  const contactForm = document.getElementById("contactForm");
+
+  contactBtn.addEventListener("click", () => {
+    const isVisible = contactForm.classList.contains("visible");
+    if (isVisible) {
+      contactForm.classList.remove("visible");
+    } else {
+      contactForm.classList.add("visible");
+    }
+  });
+});
