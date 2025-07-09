@@ -99,16 +99,16 @@
   }
 
   &:hover {
-      background-color: $orange-color;
-      color: white;
-      box-shadow: 0 0.5px 20px #565656;
-      padding-right: 2rem;
+    background-color: $orange-color;
+    color: white;
+    box-shadow: 0 0.5px 20px #565656;
+    padding-right: 2rem;
 
-      i {
-        color: white;
-        transform: translateX(6px);
-      }
+    i {
+      color: white;
+      transform: translateX(6px);
     }
+  }
 }
 
 .btn-servicios:hover {

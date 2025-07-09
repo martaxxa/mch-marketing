@@ -35,7 +35,7 @@
 
   &__title {
     font-family: $fontfamily-title;
-    font-weight: 500;
+    font-weight: 100;
     font-size: 2.5rem;
   }
 
@@ -98,3 +98,35 @@
   }
 }
 
+//Animación entrada de titulos y subtitulos
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.principal__title,
+.principal__subtitle,
+.principal__subtitle2, .link {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.principal__subtitle {
+  animation-delay: 0.6s;
+}
+
+.principal__subtitle2 {
+  animation-delay: 0.4s;
+}
+
+.link {
+  animation-delay: 0.3s;
+}

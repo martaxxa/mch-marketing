@@ -14,13 +14,14 @@
     <link rel="icon" href="./images/favicon.png" />
   </head>
 
+<script type="module" src="/js/main.js"></script>
 <load src="./partials/header.html" />
 
 <!--Página de Servicios-->
 <body>
   <section class="coverpage">
-    <h1 class="coverpage__title">Servicios</h1>
-    <p class="coverpage__subtitle">Impulsa tu marca con soluciones de marketing y diseño adaptadas a tu negocio</p>
+    <h1 class="coverpage__title js-animate-title">Servicios</h1>
+    <p class="coverpage__subtitle js-animate-subtitle">Impulsa tu marca con soluciones de marketing y diseño adaptadas a tu negocio</p>
   </section>
   <section class="services">
     <div class="services__intro">
@@ -32,12 +33,57 @@
         Definimos el alma de tu marca: misión, valores, tono, identidad visual, naming y más. Creo contigo una base coherente que transmita confianza y profesionalidad desde el primer impacto.
       </p>
       <ul class="service__list">
-        <li>Auditoría de marca actual</li>
-        <li>Naming y tagline</li>
-        <li>Desarrollo de identidad visual</li>
-        <li>Manual básico de marca</li>
+        <li><i class="fa-solid fa-pen"></i> Auditoría de marca actual</li>
+        <li><i class="fa-solid fa-font"></i> Naming y tagline</li>
+        <li><i class="fa-solid fa-palette"></i> Desarrollo de identidad visual</li>
+        <li><i class="fa-solid fa-book"></i> Manual básico de marca</li>
       </ul>
-  </article>
+    </article>
+    <article class="service">
+      <h2 class="service__title">Diseño gráfico y comunicación visual</h2>
+      <p class="service__description">
+        Transformo tus ideas en piezas gráficas profesionales que conectan con tu público y reflejan la esencia de tu negocio.
+      </p>
+      <ul class="service__list">
+        <li><i class="fa-solid fa-signature"></i> Diseño de logotipo</li>
+        <li><i class="fa-solid fa-file-image"></i> Cartelería, folletos, packaging</li>
+        <li><i class="fa-brands fa-instagram"></i> Plantillas para RRSS</li>
+        <li><i class="fa-solid fa-file-lines"></i> Presentaciones/dosieres corporativos</li>
+      </ul>
+    </article>
+    <article class="service">
+      <h2 class="service__title">Estrategia de contenidos y redes sociales</h2>
+      <p class="service__description">
+        Posiciona tu marca donde está tu audiencia. Planificamos, creamos y gestionamos contenido de valor adaptado a cada red social para lograr visibilidad y conexión real.
+      </p>
+      <ul class="service__list">
+        <li><i class="fa-solid fa-chart-line"></i> Auditoría de redes</li>
+        <li><i class="fa-solid fa-calendar-days"></i> Plan de contenidos mensual</li>
+        <li><i class="fa-solid fa-palette"></i> Diseño de creatividades</li>
+        <li><i class="fa-solid fa-pen-to-square"></i> Redacción y publicación</li>
+        <li><i class="fa-solid fa-video"></i> Asesoría para reels y stories</li>
+      </ul>
+    </article>
+    <article class="service">
+      <h2 class="service__title">Desarrollo web y App</h2>
+      <p class="service__description">
+        Diseño y desarrollo de webs corporativas claras, responsive y optimizadas para contar quién eres y lo que ofreces con estilo y funcionalidad.
+      </p>
+      <ul class="service__list">
+        <li><i class="fa-solid fa-code"></i> Web 100% a medida (HTML, SCSS, JS, React)</li>
+        <li><i class="fa-solid fa-database"></i> Backend: base de datos, gestión de clientes (MySQL)</li>
+        <li><i class="fa-solid fa-sitemap"></i> Asesoría de estructura y contenidos</li>
+        <li><i class="fa-solid fa-display"></i> Diseño responsive</li>
+        <li><i class="fa-solid fa-magnifying-glass-chart"></i> Optimización SEO básica</li>
+        <li><i class="fa-solid fa-chalkboard-user"></i> Formación para autogestión</li>
+      </ul>
+    </article>
+    <div class="services__cta">
+      <p><strong style="color: #f8ad19;">¿Tienes una idea en mente?</strong> <strong style="color: #f07e14;">¿No sabes por dónde empezar?</strong> Escríbeme y vemos cómo puedo ayudarte a hacerla realidad. Estoy aquí para <strong style="color: #e34526;">sumar y acompañarte</strong> en el camino.</p>
+      <a href="#contacto" class="btn btn--primary">Contáctame
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
   </section>
   
 </body>
