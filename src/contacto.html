@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | MCH Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Quicksand:wght@300..700&family=Rammetto+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dad595353d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+
+    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="icon" href="./images/favicon.png" />
+  </head>
+
+<script type="module" src="/js/main.js"></script>
+<load src="./partials/header.html" />
+
+<!--Página de contacto-->
+
+<body>
+  <section class="covercontact">
+      <h1 class="covercontact__title js-animate-title">Contacto</h1>
+      <p class="covercontact__subtitle js-animate-subtitle">¿Tienes un proyecto en mente o quieres impulsar tu marca? Estoy aquí para escucharte</p>
+  </section>
+  <section class="contactform">
+    <form action="mailto:martach.marketing@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Nombre <strong style="color: #e34526; font-size: 1.3rem">*</strong></label>
+      <input type="text" id="name" name="name" required placeholder="Escirbe tú nombre completo..." />
+
+      <label for="email">Correo electrónico <strong style="color: #e34526; font-size: 1.3rem">*</strong></label>
+      <input type="email" id="email" name="email" required placeholder="Escribe tu correo de contacto..." />
+
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Cuéntame sobre tu proyecto o consulta.."></textarea>
+
+      <button type="submit">Enviar mensaje
+        <i class="fa-solid fa-arrow-right"></i></a>
+      </button>
+    </form>
+  </section>
+  <section class="contactinfo">
+    <h2>También puedes escribirme <strong style="color: #f8ad19">directamente</strong></h2>
+    <ul>
+      <li><i class="fas fa-envelope"></i> <a href="mailto:martach.marketing@gmail.com">martach.marketing@gmail.com</a></li>
+      <li><i class="fas fa-phone"></i> <a href="tel:+34600000000">+34 622 35 18 92</a></li>
+    </ul>
+  </section>
+    
+</body>
+
+<load src="./partials/footer.html" />
