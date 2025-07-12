@@ -1,15 +1,17 @@
 @import 'core/variables';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'landing/cover';
+@import 'landing/coverlanding';
 @import 'landing/quiensoy';
 @import 'landing/valores';
 @import 'landing/servicios';
 @import 'landing/clientes';
-@import 'pages/coverpage';
-@import 'pages/services';
-@import 'pages/covercontact';
-@import 'pages/contact';
+@import 'services/coverservices';
+@import 'services/services';
+@import 'contact/covercontact';
+@import 'contact/contact';
+@import 'projects/coverproject';
+@import 'projects/projects';
 
 * {
   box-sizing: border-box;

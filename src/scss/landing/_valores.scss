@@ -7,7 +7,7 @@
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  font-family: $fontfamily-main
+  font-family: $fontfamily-main;
 }
 
 .valores h2 {
@@ -16,6 +16,10 @@
   margin-bottom: 1rem;
   font-family: $fontfamily-title;
   color: black;
+
+  i {
+    color: $orange-color;
+  }
 }
 
 .valores .intro {
@@ -38,6 +42,10 @@
   border: 1px solid $yellow-color;
   padding: 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 }
 
 .valor .icono {

@@ -13,6 +13,10 @@
     text-align: center;
     margin-bottom: 1rem;
     color: black;
+
+    i {
+      color: $red-color;
+    }
   }
 
   &__subtitle {
@@ -38,6 +42,10 @@
     border: 2px solid $yellow-color;
     border-radius: 2rem;
     margin-top: 1.5rem;
+
+    &:hover {
+    transform: translateY(-5px);
+    }
   }
 
   &__icons {
@@ -50,6 +58,10 @@
     i {
     font-size: 1.5rem;
     color: $orange-color;
-  }
+
+      &:hover {
+      transform: translateY(-5px);
+      }
+    }
   }
 }
