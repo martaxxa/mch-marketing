@@ -118,17 +118,18 @@
   &__resultado {
     display: flex;
     justify-content: center;
-    margin: 2rem 0;
+    gap: 1rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
 
     a {
+      font-family: $fontfamily-main;
       background-color: $red-color;
       color: white;
       text-decoration: none;
       padding: 0.75rem 1.5rem;
       border-radius: 4px;
       font-weight: bold;
-      font-family: $fontfamily-main;
-      font-size: 1rem;
       transition: background-color 0.3s ease;
 
       &:hover {
@@ -138,6 +139,7 @@
 
     i {
       padding-left: 1rem;
+      font-size: 1.1rem;
     }
   }
 
@@ -179,6 +181,36 @@
 
     &:hover {
       background-color: darken($orange-color, 10%);
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 0.5rem;
+
+    i {
+      font-size: 2rem;
+      color: $orange-color;
+      transition: transform 0.2s ease;
+      color: black;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+
+    .icon-react {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.2s ease;
+      filter: brightness(1); // por si el PNG está muy opaco
+
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
   }
 }
