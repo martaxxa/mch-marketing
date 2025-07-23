@@ -28,3 +28,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+//video
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.getElementById("mockupVideo");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          video.play().catch((e) =>
+            console.warn("No se pudo reproducir el video:", e)
+          );
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  if (video) {
+    observer.observe(video);
+  }
+});
