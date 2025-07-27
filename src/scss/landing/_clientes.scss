@@ -1,5 +1,5 @@
 .clientes-banner {
-  padding: 3rem 0;
+  padding: 1rem 0;
   background-color: #fafafa;
   overflow: hidden;
   text-align: center;
@@ -7,8 +7,10 @@
   &__title {
     font-family: $fontfamily-title;
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
+    padding-inline: 2rem;
+    line-height: 2.5rem;
   }
 
   &__subtitle {
@@ -16,7 +18,7 @@
     font-weight: 900;
     color: $orange-color;
     margin-bottom: 4rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -34,7 +36,7 @@
 }
 
 .slide {
-  min-width: 140px;
+  min-width: 110px;
   padding: 0 0.5rem;
   flex-shrink: 0;
   display: flex;

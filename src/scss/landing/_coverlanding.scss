@@ -31,37 +31,40 @@
 }
 
 .principal {
-  padding-top: 9rem;
-  padding-left: 1rem;
+  padding-top: 10rem;
+  padding-left: 0.2rem;
 
   &__title {
     font-family: $fontfamily-title;
     font-weight: 100;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   &__subtitle {
     font-family: $fontfamily-main;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $orange-color;
+    margin-bottom: 0.2rem;
   }
 
   &__subtitle-down {
     font-family: $fontfamily-main;
     font-weight: 900;
-    font-size: 1.5rem;
-    margin-bottom: 0.8rem;
-    margin-left: 3rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-left: 2rem;
     color: $yellow-color;
   }
 
   &__subtitle2 {
     font-family: $fontfamily-main;
     font-weight: 400;
-    font-size: 1.3rem;
-    margin-bottom: 0.8rem;
-    margin-right: 10rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 4rem;
     color: #666;
   }
 }
@@ -71,13 +74,13 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  padding-left: 1rem;
+  padding-left: 0.2rem;
 
   &__btn {
     position: relative;
     font-family: $fontfamily-main;
     color: $orange-color;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: 500;
     padding: 0.7rem;
     background-color: transparent;

@@ -5,3 +5,22 @@ $fontfamily-pages: "Bowlby One", sans-serif;
 $yellow-color: #f8ad19;
 $orange-color: #f07e14;
 $red-color: #e34526;
+
+//Responsive
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

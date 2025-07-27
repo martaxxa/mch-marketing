@@ -14,6 +14,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
+//Menú hamburguesa
+const toggleBtn = document.querySelector('.js_toggle');
+const menu = document.querySelector('.js_menu');
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('is-open');
+});
+
 //Form footers
 document.addEventListener("DOMContentLoaded", () => {
   const contactBtn = document.querySelector(".contact-btn");
