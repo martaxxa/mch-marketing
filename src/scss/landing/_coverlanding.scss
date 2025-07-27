@@ -91,6 +91,10 @@
     display: inline-block;
     cursor: pointer;
 
+    @include tablet {
+      font-size: 1rem;
+    }
+
     i {
       color: $orange-color;
       transition: color 0.3s ease;

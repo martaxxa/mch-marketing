@@ -11,6 +11,11 @@
     margin-bottom: 0.5rem;
     padding-inline: 2rem;
     line-height: 2.5rem;
+
+    @include tablet {
+      font-size: 1.8rem;
+      margin-top: 3rem;
+    }
   }
 
   &__subtitle {
@@ -19,6 +24,11 @@
     color: $orange-color;
     margin-bottom: 4rem;
     font-size: 1rem;
+
+    @include tablet {
+      font-size: 1.2rem;
+      margin-bottom: 5rem;
+    }
   }
 }
 
@@ -27,6 +37,10 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+
+  @include tablet {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .slide-track {

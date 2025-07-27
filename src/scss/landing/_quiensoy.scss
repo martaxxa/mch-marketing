@@ -6,6 +6,11 @@
   align-items: center;
   padding: 3rem 2rem;
 
+  @include tablet {
+    padding-inline: 4rem;
+    padding-top: 4rem;
+  }
+
   &__title {
     font-family: $fontfamily-title;
     font-weight: 100;
@@ -13,6 +18,11 @@
     text-align: center;
     margin-bottom: 1rem;
     color: black;
+
+    @include tablet {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
 
     i {
       color: $red-color;
@@ -26,6 +36,11 @@
     margin-bottom: 1rem;
     color: $orange-color;
     text-align: center;
+
+    @include tablet {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__text {
@@ -35,6 +50,12 @@
     margin-bottom: 0.8rem;
     text-align: center;
     color: #666;
+
+    @include tablet {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      padding-inline: 2rem;
+    }
   }
 
   &__img {
@@ -45,6 +66,11 @@
 
     &:hover {
     transform: translateY(-5px);
+    }
+
+    @include tablet {
+      margin-top: 1.6rem;
+      width: 22rem;
     }
   }
 
@@ -58,6 +84,10 @@
     i {
     font-size: 1.2rem;
     color: $orange-color;
+
+      @include tablet {
+        font-size: 1.4rem;
+      }
 
       &:hover {
       transform: translateY(-5px);

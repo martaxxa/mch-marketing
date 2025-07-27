@@ -1,11 +1,15 @@
 "use strict";
 
-//Query
+//Queries
 const header = document.querySelector(".js_header");
+const toggleBtn = document.querySelector('.js_toggle');
+const menu = document.querySelector('.js_menu');
+const contactBtn = document.querySelector(".contact-btn");
+const contactForm = document.getElementById("contactForm");
+const video = document.getElementById("mockupVideo");
 
 //Fondo del header al hacer scroll
 const scrollThreshold = 50;
-
 window.addEventListener("scroll", () => {
   if (window.scrollY > scrollThreshold) {
     header.classList.add("header--scrolled");
@@ -15,18 +19,12 @@ window.addEventListener("scroll", () => {
 });
 
 //Menú hamburguesa
-const toggleBtn = document.querySelector('.js_toggle');
-const menu = document.querySelector('.js_menu');
-
 toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('is-open');
 });
 
 //Form footers
 document.addEventListener("DOMContentLoaded", () => {
-  const contactBtn = document.querySelector(".contact-btn");
-  const contactForm = document.getElementById("contactForm");
-
   contactBtn.addEventListener("click", () => {
     const isVisible = contactForm.classList.contains("visible");
     if (isVisible) {
@@ -37,10 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//video
+//Video TikTok
 document.addEventListener("DOMContentLoaded", () => {
-  const video = document.getElementById("mockupVideo");
-
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

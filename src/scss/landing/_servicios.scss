@@ -2,6 +2,11 @@
   padding: 1rem 2rem;
   background-color: #fafafa;
   text-align: center;
+
+  @include tablet {
+    padding-inline: 4rem;
+    padding-top: 3rem;
+  }
 }
 
 .servicios-resumen .contenedor {
@@ -19,6 +24,10 @@
   i {
     color: $yellow-color;
   }
+
+  @include tablet {
+    font-size: 1.8rem;
+  }
 }
 
 .servicios-resumen .intro {
@@ -27,6 +36,11 @@
   margin-bottom: 1rem;
   color: $orange-color;
   font-family: $fontfamily-main;
+
+  @include tablet {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .servicios-grid {
@@ -35,12 +49,12 @@
   gap: 1rem;
 }
 
-@media (min-width: 768px) {
-  .servicios-grid {
-    flex-direction: row;
-    justify-content: space-between;
+  @include tablet {
+    .servicios-grid {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
-}
 
 .bloque-servicio {
   flex: 1;
@@ -64,6 +78,10 @@
   font-weight: 900;
   margin-bottom: 1rem;
   color: black;
+
+  @include tablet {
+    font-size: 1.1rem;
+  }
 }
 
 .bloque-servicio ul {
@@ -101,6 +119,10 @@
   font-weight: 600;
   transition: background-color 0.3s ease;
   cursor: pointer;
+
+  @include tablet {
+    font-size: 1rem;
+  }
 
   i {
     color: white;
