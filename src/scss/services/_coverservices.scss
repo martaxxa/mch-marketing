@@ -1,7 +1,7 @@
 .coverservices {
   background-image: url("../../images/cover-services.png");
   background-size: cover;
-  background-position: 35%;
+  background-position: 25%;
   background-repeat: no-repeat;
   min-height: 100svh;
   overflow: hidden;
@@ -10,24 +10,34 @@
   flex-direction: column;
   justify-content: center;
   text-align: start;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   z-index: 0;
 
   &__title {
     font-family: $fontfamily-title;
     font-weight: 100;
     color: white;
-    font-size: 4rem;
-    top: -4rem;
+    font-size: 2.3rem;
+    top: -2rem;
+
+    @include tablet {
+      font-size: 3.5rem;
+    }
   }
 
   &__subtitle {
     font-family: $fontfamily-main;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: white;
-    margin-right: 5rem;
-    top: -4rem;
+    margin-right: 3rem;
+    top: -5rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+      margin-right: 12rem;
+      top: -6.5rem;
+    }
   }
 }
 
