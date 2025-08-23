@@ -1,17 +1,21 @@
 .projects {
-  padding: 5rem 2rem;
+  padding: 5rem;
   background-color: #fafafa;
 
   &__text {
     font-family: $fontfamily-main;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.5;
     font-weight: 600;
-    max-width: 50ch;
+    max-width: 700px;
     margin-bottom: 4rem;
     margin-inline: 2rem;
     color: #666;
+
+    @include tablet {
+      font-size: 1.2rem;
+    }
   }
 
   &__grid {
@@ -62,5 +66,9 @@
     font-family: $fontfamily-title;
     text-align: center;
     line-height: 2.5rem;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 }

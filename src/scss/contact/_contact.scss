@@ -17,6 +17,10 @@
       font-weight: 800;
       font-size: 1.1rem;
       color: #222;
+
+      @include tablet {
+        font-size: 1.3rem;
+      }
     }
 
     input,
@@ -25,8 +29,12 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       font-family: $fontfamily-main;
-      font-size: 1rem;
+      font-size: 0.9rem;
       resize: vertical;
+
+      @include tablet {
+        font-size: 1.2rem;
+      }
 
       &:focus {
         outline: none;
@@ -39,7 +47,7 @@
       position: relative;
       font-family: $fontfamily-main;
       color: $orange-color;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 500;
       padding: 0.7rem;
       background-color: transparent;
@@ -49,6 +57,10 @@
       transition: all 0.3s ease;
       display: inline-block;
       cursor: pointer;
+
+      @include tablet {
+        font-size: 1.3rem;
+      }
 
       i {
         color: $orange-color;
@@ -73,40 +85,51 @@
 
 .contactinfo {
   background-color: #fafafa;
-  padding: 3rem 2.5rem;
+  padding: 0.3rem 2.3rem;
   text-align: center;
   padding-bottom: 4rem;
 
   h2 {
     font-family: $fontfamily-title;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    line-height: 3rem;
+    line-height: 2rem;
+
+    @include tablet {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
   }
 
   ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 
-    li {
-      font-family: $fontfamily-main;
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 0.8rem;
+    li a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      background: #f0f0f0;
+      color: $orange-color;
+      text-decoration: none;
+      font-size: 1.3rem;
+      transition: background 0.3s, color 0.3s;
 
-      a {
-        color: #666;
-        text-decoration: none;
-
-        &:hover {
-          color: $yellow-color;
-        }
+      @include tablet {
+        font-size: 1.5rem;
       }
+    }
 
-      i {
-        color: $orange-color;
-        font-size: 1.2rem;
-      }
+    li a:hover {
+      background: #333;
+      color: #fff;
     }
   }
 }
