@@ -10,7 +10,7 @@
     font-weight: 600;
     max-width: 700px;
     margin-bottom: 4rem;
-    margin-inline: 2rem;
+    margin-inline: 0.5rem;
     color: #666;
 
     @include tablet {
@@ -62,13 +62,13 @@
 
   &__name {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: $fontfamily-title;
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 1.5rem;
 
     @include tablet {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
 }
