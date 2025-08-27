@@ -8,9 +8,10 @@
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+  padding: 0.5rem 0.5rem;
 
-  @include mobile {
-    padding: 0.5rem 0.5rem;
+  @include tablet {
+    padding: 1rem 0.5rem;
   }
 
   &.header--scrolled {
@@ -22,13 +23,13 @@
   }
 
   &__logo {
-    max-width: 120px;
+    max-width: 110px;
     height: auto;
     padding: 0.5rem 0;
     margin-left: 0.5rem;
 
-    @include mobile {
-      max-width: 100px;
+    @include tablet {
+      max-width: 150px;
       padding: 0.5rem;
       margin-left: 0;
     }
@@ -64,7 +65,11 @@
     margin-right: 1.5rem;
     padding: 0;
     font-family: $fontfamily-main;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+
+    @include desktop {
+      font-size: 1.4rem;
+    }
 
     li {
       font-weight: 600;
