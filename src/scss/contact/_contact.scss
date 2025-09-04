@@ -12,11 +12,11 @@
     width: 100%;
 
     label {
-      font-weight: 600;
+      font-weight: 900;
       font-family: $fontfamily-main;
       font-weight: 800;
-      font-size: 1.1rem;
-      color: #222;
+      font-size: 1.2rem;
+      color: black;
 
       @include tablet {
         font-size: 1.3rem;
@@ -29,8 +29,9 @@
       border: 1px solid #ccc;
       border-radius: 5px;
       font-family: $fontfamily-main;
-      font-size: 0.9rem;
+      font-size: 1rem;
       resize: vertical;
+      margin-bottom: 1.1rem;
 
       @include tablet {
         font-size: 1.2rem;
@@ -60,6 +61,10 @@
 
       @include tablet {
         font-size: 1.3rem;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
       }
 
       i {
