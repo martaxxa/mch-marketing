@@ -18,7 +18,7 @@
   color: black;
 
   @include tablet {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -37,15 +37,27 @@
   margin-bottom: 3rem;
 
   @include tablet {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-inline: 5rem;
   }
 }
 
 .valores-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr;
+  justify-content: center;
   gap: 1rem;
+
+  @include tablet {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 }
 
 .valor {
@@ -55,6 +67,8 @@
   padding: 1.5rem 1.3rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   margin-top: 1rem;
+  justify-self: center;
+  max-width: 330px;
 
   &:hover {
     transform: translateY(-5px);
@@ -64,6 +78,10 @@
 .valor .icono {
   font-size: 2.3rem;
   margin-bottom: 1rem;
+
+  @include tablet {
+    font-size: 2.5rem;
+  }
 }
 
 .valor h3 {
@@ -74,15 +92,12 @@
   color: #222;
 
   @include tablet {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 }
 
 .valor p {
   font-size: 1.2rem;
   color: #666;
-
-  @include tablet {
-    font-size: 1rem;
-  }
 }
