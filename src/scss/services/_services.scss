@@ -2,8 +2,7 @@
   background-color: #fafafa;
   padding-top: 5rem;
   padding-inline: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding-bottom: 3rem;
 
   &__intro {
     text-align: center;
@@ -12,20 +11,28 @@
     font-weight: 600;
 
     @include tablet {
-      margin-inline: 3rem;
+      margin-inline: 5rem;
     }
 
     p {
-      font-size: 1rem;
-      line-height: 1.5;
-      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 2rem;
       margin: 0 auto;
       color: #666;
 
       @include tablet {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
       }
     }
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   &__cta {
@@ -35,9 +42,8 @@
     p {
       font-family: $fontfamily-main;
       font-weight: 600;
-      font-size: 1.1rem;
-      line-height: 1.5;
-      max-width: 700px;
+      font-size: 1.2rem;
+      line-height: 2rem;
       margin-block: 2.5rem 2rem;
       color: #666;
 
@@ -46,13 +52,18 @@
         margin-block: 4rem 3rem;
         margin-inline: 3rem;
       }
+
+      @include desktop {
+        font-size: 1.5rem;
+        margin-inline: 5rem;
+      }
     }
 
     .btn--primary {
       display: inline-block;
       font-family: $fontfamily-main;
-      font-weight: 900;
-      font-size: 0.9rem;
+      font-weight: 600;
+      font-size: 1.1rem;
       padding: 0.8rem 1.5rem;
       background-color: $yellow-color;
       color: #fff;
@@ -65,6 +76,10 @@
 
       @include tablet {
         font-size: 1.1rem;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
       }
 
       i {
@@ -102,41 +117,55 @@
 
   &__title {
     font-size: 1.2rem;
-    line-height: 1.5;
-    color: $orange-color;
-    font-weight: 100;
-    margin-bottom: 1.5rem;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
     font-family: $fontfamily-title;
+    color: $orange-color;
+    font-weight: 900;
 
     @include tablet {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+
+    @include desktop {
       font-size: 1.5rem;
     }
   }
 
   &__description {
-    font-family: $fontfamily-main;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
+    font-size: 1.1rem;
     color: #666;
-    margin-bottom: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-family: $fontfamily-main;
 
     @include tablet {
-      font-size: 1.1rem;
-      margin-right: 2rem;
+      font-size: 1.2rem;
+    }
+
+    @include desktop {
+      font-size: 1.3rem;
     }
   }
 
   &__list {
-    font-family: $fontfamily-main;
-    font-size: 0.9rem;
-    font-weight: 400;
+    font-size: 1.1rem;
     color: #666;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-family: $fontfamily-main;
     list-style: none;
     padding-left: 0;
 
     @include tablet {
-      font-size: 1rem;
+      font-size: 1.2rem;
+    }
+
+    @include desktop {
+      font-size: 1.3rem;
     }
 
     li {
@@ -152,6 +181,10 @@
 
         @include tablet {
           font-size: 1.2rem;
+        }
+
+        @include desktop {
+          font-size: 1.3rem;
         }
       }
     }
