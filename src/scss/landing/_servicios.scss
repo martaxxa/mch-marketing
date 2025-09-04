@@ -1,5 +1,5 @@
 .servicios-resumen {
-  padding: 1rem 2rem;
+  padding: 3rem;
   background-color: #fafafa;
   text-align: center;
 
@@ -15,10 +15,10 @@
 }
 
 .servicios-resumen h2 {
-  font-size: 1.6rem;
-  font-weight: 100;
-  margin-bottom: 1rem;
   font-family: $fontfamily-title;
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
   color: black;
 
   i {
@@ -26,20 +26,32 @@
   }
 
   @include tablet {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+
+  @include desktop {
+    font-size: 2.5rem;
   }
 }
 
 .servicios-resumen .intro {
-  font-size: 1rem;
-  font-weight: 900;
+  font-family: $fontfamily-main;
+  font-weight: 700;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   color: $orange-color;
-  font-family: $fontfamily-main;
+  text-align: center;
+  line-height: 1.7rem;
+  
 
   @include tablet {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    margin-inline: 5rem;
+  }
+
+  @include desktop {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 }
 
@@ -73,14 +85,20 @@
 }
 
 .bloque-servicio h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 0.5rem;
   font-family: $fontfamily-main;
-  font-weight: 900;
-  margin-bottom: 1rem;
   color: black;
+  font-weight: 900;
 
   @include tablet {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  @include desktop {
+    font-size: 1.5rem;
   }
 }
 
@@ -90,17 +108,28 @@
 }
 
 .bloque-servicio li {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 400;
+  line-height: 1.6rem;
   margin-bottom: 0.5rem;
   font-family: $fontfamily-main;
-  font-size: 0.9rem;
-  color: #666;
   position: relative;
-  padding-left: 1.2rem;
+  padding-left: 1.7rem;
+
+  @include tablet {
+    font-size: 1.2rem;
+  }
+
+  @include desktop {
+    font-size: 1.3rem;
+  }
 }
 
 .bloque-servicio li::before {
   content: "✔";
   position: absolute;
+  font-size: 1.5rem;
   left: 0;
   color: $yellow-color;
 }
@@ -109,7 +138,7 @@
   display: inline-block;
   font-family: $fontfamily-main;
   font-weight: 900;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   margin-top: 2rem;
   padding: 0.8rem 1.5rem;
   background-color: $yellow-color;
@@ -121,7 +150,12 @@
   cursor: pointer;
 
   @include tablet {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+
+  @include tablet {
+    font-size: 1.5rem;
   }
 
   i {

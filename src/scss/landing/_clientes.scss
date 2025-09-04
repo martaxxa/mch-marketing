@@ -7,14 +7,18 @@
   &__title {
     font-family: $fontfamily-title;
     font-weight: 100;
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
     padding-inline: 2rem;
     line-height: 2.5rem;
 
     @include tablet {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
       margin-top: 3rem;
+    }
+
+    @include desktop {
+      font-size: 2.5rem;
     }
   }
 
@@ -23,11 +27,15 @@
     font-weight: 900;
     color: $orange-color;
     margin-bottom: 4rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 
     @include tablet {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       margin-bottom: 5rem;
+    }
+
+    @include desktop {
+      font-size: 1.8rem;
     }
   }
 }
@@ -46,7 +54,7 @@
 .slide-track {
   display: flex;
   animation: scroll 20s linear infinite;
-  gap: 1rem; // Espaciado más suave
+  gap: 1rem;
 }
 
 .slide {
@@ -63,6 +71,10 @@
   width: auto;
   filter: grayscale(100%);
   transition: filter 0.3s, opacity 0.3s;
+
+  @include desktop {
+    width: 10rem;
+  }
 }
 
 .slide img:hover {

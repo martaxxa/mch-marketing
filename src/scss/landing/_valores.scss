@@ -22,6 +22,10 @@
     margin-bottom: 0.5rem;
   }
 
+  @include desktop {
+    font-size: 2.5rem;
+  }
+
   i {
     color: $orange-color;
   }
@@ -40,6 +44,11 @@
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     margin-inline: 5rem;
+  }
+
+  @include desktop {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
   }
 }
 
