@@ -97,3 +97,23 @@ const form = document.getElementById('contactForm');
       formMessage.textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
     }
   });
+
+  //Cookies 
+  document.addEventListener("DOMContentLoaded", function() {
+    const cookieConsent = document.getElementById('cookieConsent');
+    const accepted = localStorage.getItem('cookiesAccepted');
+
+    if (!accepted) {
+      cookieConsent.style.display = 'block';
+    }
+
+    document.getElementById('acceptCookies').addEventListener('click', function() {
+      localStorage.setItem('cookiesAccepted', 'true');
+      cookieConsent.style.display = 'none';
+    });
+
+    document.getElementById('rejectCookies').addEventListener('click', function() {
+      localStorage.setItem('cookiesAccepted', 'false');
+      cookieConsent.style.display = 'none';
+    });
+  });
