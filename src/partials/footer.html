@@ -13,13 +13,14 @@
   <form class="contact-form" id="contactForm" action="https://formspree.io/f/mgvldkwg" method="POST">
     <input type="text" name="name" placeholder="Tu nombre*" required />
     <input type="email" name="email" placeholder="Tu email*" required />
-    <textarea name="message" placeholder="¿Qué necesitas?" required></textarea>
+    <textarea name="message" placeholder="¿Qué necesitas?"></textarea>
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
     <button type="submit">
       Contacto contigo <i class="fa-solid fa-arrow-right"></i>
     </button>
   </form>
+  <div id="formMessage" style="display:none; color: #f8ad19; font-weight: 900; margin-top: 1rem; font-family: Quicksand, sans-serif;"></div>
     <hr />
     <p class="footer-desc">
       	Me encantará saber de ti. Si tienes un proyecto en mente, una duda o simplemente quieres saludar, estaré encantada de responderte lo antes posible <i class="fa-solid fa-face-smile"></i>.

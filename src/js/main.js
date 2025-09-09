@@ -54,3 +54,46 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(video);
   }
 });
+
+//Mensaje de formulario de contacto
+const form = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault(); // Evita que se recargue la página
+
+    // Validación básica de required
+    if (!form.checkValidity()) {
+      formMessage.style.display = 'block';
+      formMessage.style.color = 'red';
+      formMessage.textContent = 'Por favor, rellena los campos obligatorios.';
+      return;
+    }
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mgvldkwg', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      });
+
+      if (response.ok) {
+        formMessage.style.display = 'block';
+        formMessage.style.color = '#f8ad19';
+        formMessage.textContent = '¡Mensaje enviado con éxito!';
+        form.reset();
+      } else {
+        formMessage.style.display = 'block';
+        formMessage.style.color = 'red';
+        formMessage.textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
+      }
+    } catch (error) {
+      formMessage.style.display = 'block';
+      formMessage.style.color = 'red';
+      formMessage.textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
+    }
+  });
