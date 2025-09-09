@@ -1,51 +1,91 @@
 .social-examples {
-  padding: 4rem 0rem;
+  padding: 5rem 0;
   background-color: #fafafa;
+  max-width: 1200px;
+  margin: 0 auto;
 
   &__title {
     font-family: $fontfamily-title;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
     margin-bottom: 1rem;
+    color: black;
+
+    @include desktop {
+      font-size: 3rem;
+    }
   }
 
   &__text {
     font-family: $fontfamily-main;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #666;
     text-align: center;
-    padding-inline: 3rem;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #666;
+    padding-inline: 2rem;
+    font-weight: 500;
+
+    @include tablet {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+
+    @include desktop {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
   }
 }
 
 .example {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 
   &__images {
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    flex: 1;
 
     img {
       width: 100%;
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
 
       @include tablet {
-        width: 70%;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include desktop {
+        max-width: 1000px;
         margin: 0 auto;
       }
     }
   }
 
   &__text {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: start;
     padding-inline: 2rem 2rem;
+
+    @include tablet {
+      text-align: center;
+      align-items: center;
+      padding-inline: 7rem;
+    }
+
+    @include desktop {
+      text-align: center;
+      align-items: center;
+      margin: 0 auto;
+      padding-inline: 4rem;
+    }
   }
 
   &__title {
@@ -55,27 +95,58 @@
     margin-bottom: 1rem;
     margin-top: 3rem;
     color: $orange-color;
+
+    @include tablet {
+      font-size: 1.5rem;
+    }
+
+    @include desktop {
+      font-size: 1.8rem;
+    }
   }
 
   &__description {
     font-family: $fontfamily-main;
     font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
     color: #666;
     margin-bottom: 1rem;
     padding-right: 1.5rem;
+
+    @include tablet {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+
+    @include desktop {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
   }
 
   &__video {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    flex: 1;
 
     video {
       width: 100%;
-      max-width: 600px;
-      border-radius: 12px;
+      border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+      @include tablet {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @include desktop {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
     }
   }
 }

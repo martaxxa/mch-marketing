@@ -194,15 +194,17 @@
       font-family: $fontfamily-main;
       font-weight: 500;
       font-size: 1.2rem;
-      line-height: 1.5;
+      line-height: 1.5rem;
       color: #666;
 
       @include tablet {
         font-size: 1.3rem;
+        line-height: 1.6rem;
       }
 
       @include desktop {
         font-size: 1.5rem;
+        line-height: 1.8rem;
       }
     }
 
@@ -211,21 +213,46 @@
       border-radius: 15px;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
+
+      @include tablet {
+        text-align: start;
+        padding-block: 1.5rem;
+        padding-inline: 5rem;
+      }
+
+      @include desktop {
+        text-align: start;
+        padding-inline: 10rem;
+      }
     }
 
     li {
       list-style-type: none;
       font-family: $fontfamily-main;
       font-weight: 500;
-      font-size: 1.1rem;
-      line-height: 1.4rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
       color: #666;
 
+      @include tablet {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+      }
+
+      @include desktop {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+      }
+
       i {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
 
         &:hover {
           transform: translateY(-5px);
+        }
+
+        @include tablet {
+          font-size: 1.5rem;
         }
       }
     }
