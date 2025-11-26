@@ -1,119 +1,129 @@
 "use strict";
 
-//Queries
-const header = document.querySelector(".js_header");
-const toggleBtn = document.querySelector('.js_toggle');
-const menu = document.querySelector('.js_menu');
-const contactBtn = document.querySelector(".contact-btn");
-const contactForm = document.getElementById("contactForm");
-const video = document.getElementById("mockupVideo");
+document.addEventListener("DOMContentLoaded", () => {
+  // Queries
+  const header = document.querySelector(".js_header");
+  const toggleBtn = document.querySelector('.js_toggle');
+  const menu = document.querySelector('.js_menu');
+  const contactBtn = document.querySelector(".contact-btn");
+  const footerContactForm = document.getElementById("footerContactForm");
+  const video = document.getElementById("mockupVideo");
 
-//Fondo del header al hacer scroll
-const scrollThreshold = 50;
-window.addEventListener("scroll", () => {
-  if (window.scrollY > scrollThreshold) {
-    header.classList.add("header--scrolled");
-  } else {
-    header.classList.remove("header--scrolled");
+  // Fondo del header al hacer scroll
+  const scrollThreshold = 50;
+  if (header) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > scrollThreshold) {
+        header.classList.add("header--scrolled");
+      } else {
+        header.classList.remove("header--scrolled");
+      }
+    });
   }
-});
 
-//Menú hamburguesa
-toggleBtn.addEventListener('click', () => {
-  menu.classList.toggle('is-open');
-});
+  // Menú hamburguesa
+  if (toggleBtn && menu) {
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('is-open');
+    });
+  }
 
-//Form footers
-document.addEventListener("DOMContentLoaded", () => {
-  contactBtn.addEventListener("click", () => {
-    const isVisible = contactForm.classList.contains("visible");
-    if (isVisible) {
-      contactForm.classList.remove("visible");
-    } else {
-      contactForm.classList.add("visible");
-    }
-  });
-});
+  // Form footers
+  if (contactBtn && footerContactForm) {
+    contactBtn.addEventListener("click", () => {
+      footerContactForm.classList.toggle("visible");
+    });
+  }
 
-//Video TikTok
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          video.play().catch((e) =>
-            console.warn("No se pudo reproducir el video:", e)
-          );
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
+  // Video TikTok
   if (video) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play().catch((e) =>
+              console.warn("No se pudo reproducir el video:", e)
+            );
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
     observer.observe(video);
   }
-});
 
-//Mensaje de formulario de contacto
-const form = document.getElementById('contactForm');
-  const formMessage = document.getElementById('formMessage');
+  // Función para formularios
+  const handleContactForm = (formId, messageId) => {
+    const form = document.getElementById(formId);
+    const formMessage = document.getElementById(messageId);
 
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault(); // Evita que se recargue la página
+    if (!form || !formMessage) return;
 
-    // Validación básica de required
-    if (!form.checkValidity()) {
-      formMessage.style.display = 'block';
-      formMessage.style.color = 'red';
-      formMessage.textContent = 'Por favor, rellena los campos obligatorios.';
-      return;
-    }
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault(); // Evita que se recargue la página
 
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch('https://formspree.io/f/mgvldkwg', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json'
-        },
-        body: formData
-      });
-
-      if (response.ok) {
+      // Validación básica de required
+      if (!form.checkValidity()) {
         formMessage.style.display = 'block';
-        formMessage.style.color = '#f8ad19';
-        formMessage.textContent = '¡Mensaje enviado con éxito!';
-        form.reset();
-      } else {
+        formMessage.style.color = 'red';
+        formMessage.textContent = 'Por favor, rellena los campos obligatorios.';
+        return;
+      }
+
+      const formData = new FormData(form);
+      const actionUrl = form.getAttribute('action') || 'https://formspree.io/f/mgvldkwg';
+
+      try {
+        const response = await fetch(actionUrl, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json'
+          },
+          body: formData
+        });
+
+        if (response.ok) {
+          formMessage.style.display = 'block';
+          formMessage.style.color = '#f8ad19';
+          formMessage.textContent = '¡Mensaje enviado con éxito!';
+          form.reset();
+        } else {
+          formMessage.style.display = 'block';
+          formMessage.style.color = 'red';
+          formMessage.textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
+        }
+      } catch (error) {
         formMessage.style.display = 'block';
         formMessage.style.color = 'red';
         formMessage.textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
       }
-    } catch (error) {
-      formMessage.style.display = 'block';
-      formMessage.style.color = 'red';
-      formMessage.textContent = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
-    }
-  });
+    });
+  };
 
-  //Cookies 
-  document.addEventListener("DOMContentLoaded", function() {
-    const cookieConsent = document.getElementById('cookieConsent');
+  handleContactForm('contactPageForm', 'contactPageFormMessage');
+  handleContactForm('footerContactForm', 'footerFormMessage');
+
+  // Cookies
+  const cookieConsent = document.getElementById('cookieConsent');
+  const acceptCookiesBtn = document.getElementById('acceptCookies');
+  const rejectCookiesBtn = document.getElementById('rejectCookies');
+
+  if (cookieConsent && acceptCookiesBtn && rejectCookiesBtn) {
     const accepted = localStorage.getItem('cookiesAccepted');
 
     if (!accepted) {
       cookieConsent.style.display = 'block';
     }
 
-    document.getElementById('acceptCookies').addEventListener('click', function() {
+    acceptCookiesBtn.addEventListener('click', function() {
       localStorage.setItem('cookiesAccepted', 'true');
       cookieConsent.style.display = 'none';
     });
 
-    document.getElementById('rejectCookies').addEventListener('click', function() {
+    rejectCookiesBtn.addEventListener('click', function() {
       localStorage.setItem('cookiesAccepted', 'false');
       cookieConsent.style.display = 'none';
     });
-  });
+  }
+});
