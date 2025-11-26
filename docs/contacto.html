@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | MCH Marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Quicksand:wght@300..700&family=Rammetto+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dad595353d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+
+    
+    <link rel="icon" href="./images/favicon.png" />
+    <script type="module" crossorigin src="./assets/main-ad88ea26.js"></script>
+    <script type="module" crossorigin src="./js/main.js"></script>
+    <link rel="stylesheet" href="./assets/main-0ec61b84.css">
+  </head>
+
+
+<header class="header js_header">
+  <div class="header__box1">
+    <a href="index.html"><img class="header__logo" src="../images/mchlogo-color.png" alt="Logo MCH Studio"/></a>
+  </div>
+
+  <div class="header__toggle js_toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <div class="header__box2 js_menu">
+    <ul class="header__menu">
+      <li><a href="servicios.html" style="color: #e34526;">Servicios</a></li>
+      <li><a href='proyectos.html' style="color: #f07e14;">Proyectos</a></li>
+      <li><a href="contacto.html" style="color: #f8ad19;">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+<!--Página de contacto-->
+
+<body>
+  <section class="covercontact">
+      <h1 class="covercontact__title js-animate-title">Contacto</h1>
+      <p class="covercontact__subtitle js-animate-subtitle">¿Tienes un proyecto en mente o quieres impulsar tu marca? Estoy aquí para escucharte</p>
+  </section>
+  <section class="contactform">
+    <form id="contactPageForm" action="https://formspree.io/f/mgvldkwg" method="POST">
+    <label for="name">Nombre <strong style="color: #e34526; font-size: 1.3rem">*</strong></label>
+    <input type="text" id="name" name="name" required placeholder="Escribe tu nombre completo..." />
+
+    <label for="email">Correo electrónico <strong style="color: #e34526; font-size: 1.3rem">*</strong></label>
+    <input type="email" id="email" name="email" required placeholder="Escribe tu dirección de email..." />
+
+    <label for="message">Mensaje</label>
+    <textarea id="message" name="message" rows="6" placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
+
+    <button type="submit">
+      Enviar mensaje <i class="fa-solid fa-arrow-right"></i>
+    </button>
+
+    <div id="contactPageFormMessage" style="display:none; color: #f8ad19; font-weight: 900; font-family: Quicksand, sans-serif;"></div>
+  </form>
+  </section>
+  <section class="contactinfo">
+    <h2>También puedes escribirme <strong style="color: #f8ad19">directamente</strong></h2>
+    <ul>
+      <li>
+        <a href="mailto:martach.marketing@gmail.com?subject=Contacto%20desde%20web&body=Hola%20Marta,">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      <li>
+        <a href="tel:+34622351892">
+          <i class="fas fa-phone"></i>
+        </a>
+      </li>
+    </ul>
+</section>
+    
+</body>
+
+<footer class="mch-footer">
+	<div class="footer-top">
+		<div class="footer-header">
+			<div class="footer-left">
+				<h2 class="footer-title">¿Hablamos?</h2>
+				<img src="../images/mchlogo-blanco.png" alt="MCH Marketing" class="footer-logo--spin">
+			</div>
+			<div class="footer-right">
+				<button class="contact-btn">¡Cuéntame! <i class="fa-solid fa-arrow-right"></i></button>
+			</div>
+		</div>
+		<!-- FORMULARIO OCULTO -->
+		<form class="contact-form" id="footerContactForm" action="https://formspree.io/f/mgvldkwg" method="POST">
+			<input type="text" name="name" placeholder="Tu nombre*" required>
+			<input type="email" name="email" placeholder="Tu email*" required>
+			<textarea name="message" placeholder="¿Qué necesitas?"></textarea>
+			<input type="hidden" name="_captcha" value="false">
+			<input type="hidden" name="_next" value="https://tudominio.com/gracias.html">
+			<button type="submit">
+				Contacto contigo <i class="fa-solid fa-arrow-right"></i>
+			</button>
+		</form>
+		<div id="footerFormMessage" style="display:none; color: #f8ad19; font-weight: 900; margin-top: 1rem; font-family: Quicksand, sans-serif;"></div>
+		<hr>
+		<p class="footer-desc">
+			Me encantará saber de ti. Si tienes un proyecto en mente, una duda o simplemente quieres saludar, estaré encantada de responderte lo antes posible <i class="fa-solid fa-face-smile"></i>.
+		</p>
+		<div class="social-icons">
+			<a href="https://www.linkedin.com/notifications/?filter=all" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+			<a href="mailto:martach.marketing@gmail.com?subject=Contacto%20desde%20web&body=Hola%20Marta,"><i class="fa-solid fa-envelope"></i></a>
+			<a href="tel:+34622351892"><i class="fa-solid fa-phone"></i></a>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		<p>MCH Marketing © Todos los derechos reservados</p>
+		<p><a href="../politica-privacidad.html">Política de Privacidad</a>
+		| <a href="../aviso-legal.html">Aviso Legal</a>
+		| <a href="../politica-cookies.html">Política de cookies</a></p>
+		<p>Sevilla, España</p>
+	</div>
+</footer>
