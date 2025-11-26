@@ -31,7 +31,7 @@ const inputFilesList = {
 }
 
 export default defineConfig({
-  base: "./",
+  base: "/mch-marketing/",
   root: "src",
   publicDir: "../public",
   build: {
