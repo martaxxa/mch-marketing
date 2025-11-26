@@ -99,6 +99,21 @@ mch-marketing/
   </section>
 
 
+  <!-- Deploy -->
+  <section style="padding:30px;">
+    <h2 style="font-size: 1.8rem;">🌍 Despliegue en GitHub Pages</h2>
+
+    <p>El proyecto está configurado para publicarse desde la raíz.</p>
+
+    <ol style="line-height:1.7; margin-left:20px;">
+      <li>Ir a <strong>Settings → Pages</strong></li>
+      <li>Seleccionar <strong>Branch: main</strong></li>
+      <li>Elegir <strong>Folder: /root</strong></li>
+      <li>Guardar</li>
+    </ol>
+  </section>
+
+
   <!-- Objetivo -->
   <section style="padding:30px; background:#fafafa;">
     <h2 style="font-size: 1.8rem;">🎯 Objetivo de la web</h2>
