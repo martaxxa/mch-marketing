@@ -1,143 +1,59 @@
-<section class="readme">
-  <div style="text-align:center; padding: 40px 20px;">
-    <!-- Logo -->
-    <img src="./assets/img/logo-mch.png" alt="MCH Marketing" style="width:160px; margin-bottom:20px;" />
+# MCH Marketing - Web Corporativa
 
-    <h1 style="font-size: 2.4rem; margin-bottom: 10px;">
-      🌐 MCH Marketing — Web Corporativa
-    </h1>
+🌐 Estrategia digital · Branding · Desarrollo Web · Publicidad Online & Offline.
+**La presencia online que impulsa tu marca.**
 
-    <p style="font-size: 1.2rem; color:#555; max-width:700px; margin:0 auto;">
-      Estrategia digital · Branding · Desarrollo Web · Publicidad Online & Offline<br />
-      <strong>La presencia online que impulsa tu marca.</strong>
-    </p>
-  </div>
+## 🚀 Vista previa
 
-  <hr style="margin:40px auto; width:60%; opacity:0.3;" />
+👉 Web Online: próximamente disponible en GitHub Pages
+URL final:
+🔗 https://martaxxa.github.io/mch-marketing/
 
+---
 
-  <!-- Vista previa -->
-  <section style="padding: 20px; text-align:center;">
-    <h2 style="font-size: 1.8rem;">🚀 Vista Previa</h2>
-    <p>
-      <strong>Web Online:</strong> próximamente disponible en GitHub Pages.<br />
-      URL final:<br />
-      <code>https://martaxxa.github.io/mch-marketing/</code>
-    </p>
-  </section>
+## ✨ Sobre este proyecto
 
+La web corporativa de **MCH Marketing** representa la esencia de la marca:
+**claridad, estrategia y diseño orientado al impacto.**
 
-  <!-- Sobre el proyecto -->
-  <section style="padding: 30px;">
-    <h2 style="font-size: 1.8rem;">✨ Sobre este proyecto</h2>
-    <p style="line-height:1.7;">
-      La web corporativa de <strong>MCH Marketing</strong> representa la esencia de la marca:
-      <strong>claridad, estrategia y diseño orientado al impacto</strong>.
-      Construida con un enfoque modular y escalable, combina:
-    </p>
+El proyecto está construido con un enfoque modular, profesional y escalable. Combina:
 
-    <ul style="line-height:1.7; margin-left:20px;">
-      <li>Diseño limpio y profesional</li>
-      <li>Contenidos orientados a conversión</li>
-      <li>Arquitectura web pensada para crecer</li>
-      <li>Animaciones sutiles que mejoran la experiencia</li>
-    </ul>
-  </section>
+✅ Diseño limpio y corporativo
+✅ Contenidos enfocados a conversión
+✅ Arquitectura web pensada para crecer
+✅ Animaciones sutiles con JavaScript
+✅ Diseño responsive adaptado a cualquier dispositivo
 
+---
 
-  <!-- Tecnologías -->
-  <section style="padding:30px; background:#fafafa;">
-    <h2 style="font-size: 1.8rem;">🛠️ Tecnologías utilizadas</h2>
+## 🛠️ Tecnologías utilizadas
 
-    <p>
-      <img src="https://skillicons.dev/icons?i=html,css,sass,js,github"
-           alt="Tecnologías"
-           style="max-width:100%; margin:10px 0;" />
-    </p>
+🔋 HTML5
+🔋 SASS (SCSS)
+🔋 JavaScript
+🔋 Git + GitHub
+🔋 Metodología Mobile First
 
-    <ul style="line-height:1.7; margin-left:20px;">
-      <li><strong>HTML5</strong></li>
-      <li><strong>SASS (SCSS)</strong></li>
-      <li><strong>JavaScript</strong></li>
-      <li><strong>GitHub Pages</strong> para despliegue</li>
-      <li>Diseño responsive Mobile First</li>
-    </ul>
-  </section>
+---
 
+## 🎯 Objetivos de la web
 
-  <!-- Estructura -->
-  <section style="padding:30px;">
-    <h2 style="font-size: 1.8rem;">📁 Estructura del proyecto</h2>
+- Presentar servicios de marketing, branding y estrategia digital
+- Mostrar portfolio y proyectos
+- Captar clientes potenciales
+- Fortalecer la presencia digital de la marca MCH Marketing
 
-    <pre style="background:#111; color:#fff; padding:20px; border-radius:8px; overflow:auto;">
-mch-marketing/
-├── assets/
-│   ├── css/
-│   ├── scss/
-│   ├── js/
-│   └── img/
-├── pages/
-│   ├── sobre-mi.html
-│   ├── servicios.html
-│   ├── publicidad.html
-│   ├── proyectos.html
-│   └── contacto.html
-└── index.html
-    </pre>
-  </section>
+---
 
+## 👩‍💼 Contacto
 
-  <!-- Desarrollo -->
-  <section style="padding:30px; background:#fafafa;">
-    <h2 style="font-size: 1.8rem;">⚡ Desarrollo en local</h2>
+**Marta C.H. — MCH Marketing**
+📧 martach.marketing@gmail.com
+💼 Estrategia · Branding · Desarrollo Web · Redes Sociales
 
-    <p>Clona el repositorio:</p>
-    <pre style="background:#111; color:#fff; padding:15px; border-radius:8px;">git clone https://github.com/martaxxa/mch-marketing.git</pre>
+---
 
-    <p>Compila SASS durante el desarrollo:</p>
-    <pre style="background:#111; color:#fff; padding:15px; border-radius:8px;">sass assets/scss/main.scss assets/css/main.css --watch</pre>
-  </section>
+## 🔒 Licencia
 
-
-  <!-- Deploy -->
-  <section style="padding:30px;">
-    <h2 style="font-size: 1.8rem;">🌍 Despliegue en GitHub Pages</h2>
-
-    <p>El proyecto está configurado para publicarse desde la raíz.</p>
-
-    <ol style="line-height:1.7; margin-left:20px;">
-      <li>Ir a <strong>Settings → Pages</strong></li>
-      <li>Seleccionar <strong>Branch: main</strong></li>
-      <li>Elegir <strong>Folder: /root</strong></li>
-      <li>Guardar</li>
-    </ol>
-  </section>
-
-
-  <!-- Objetivo -->
-  <section style="padding:30px; background:#fafafa;">
-    <h2 style="font-size: 1.8rem;">🎯 Objetivo de la web</h2>
-    <ul style="line-height:1.7; margin-left:20px;">
-      <li>Presentar servicios de marketing y branding</li>
-      <li>Mostrar portfolio y proyectos</li>
-      <li>Facilitar contacto con clientes</li>
-      <li>Construir presencia digital sólida</li>
-    </ul>
-  </section>
-
-
-  <!-- Contacto -->
-  <section style="padding:30px;">
-    <h2 style="font-size: 1.8rem;">👩‍💼 Contacto</h2>
-
-    <p style="line-height:1.7;">
-      <strong>Marta C.H. — MCH Marketing</strong><br />
-      📧 <a href="mailto:martach.marketing@gmail.com">martach.marketing@gmail.com</a><br />
-      💼 Estrategia · Branding · Desarrollo Web · Redes Sociales
-    </p>
-  </section>
-
-  <p style="text-align:center; padding:30px; font-size:1.1rem;">
-    Hecho con 💛 marketing, diseño y estrategia.
-  </p>
-</section>
+Proyecto privado.
+No se permite su uso o redistribución sin autorización.
